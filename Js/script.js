@@ -25,3 +25,44 @@ if(qual % 2 === 0)
         alert("O número é impar")
 
 }
+
+function dois() {
+
+    var a = Number(document.getElementById("umn").value);
+    var b = Number(document.getElementById("doisn").value);
+var resultado = [a, b]
+
+document.getElementById("resultado").innerHTML = resultado;
+
+}
+
+
+function tres() {
+
+    var a = Number(document.getElementById("a").value);
+    var b = Number(document.getElementById("b").value);
+    var c = Number(document.getElementById("c").value);
+
+    let resultado = [a , b , c];
+    resultado = resultado.sort((a,b) => a - b);
+
+
+
+    document.getElementById("crescente").innerHTML = resultado;
+
+}
+
+function tr() {
+
+    var d = Number(document.getElementById("d").value);
+    var e = Number(document.getElementById("e").value);
+    var f = Number(document.getElementById("f").value);
+
+    let resultado = [f , d , e];
+    resultado = resultado.sort((f,d) => d - f);
+
+
+
+    document.getElementById("decrescente").innerHTML = resultado;
+
+}
